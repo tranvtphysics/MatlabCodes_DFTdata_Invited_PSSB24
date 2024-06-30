@@ -1,0 +1,20 @@
+
+
+                       !================!
+                       !==== DOS.X =====!
+                       !================!
+  
+! calculate DOS form results of nscf. Using dos.x to calculate dos
+
+!======================================================================
+!======================================================================
+
+ &DOS
+                      prefix = '2Dgraphene' ,
+                      outdir = '.' ,
+                      fildos = '2Dgraphene.dos' ,
+                      DeltaE = 0.01 ,
+                        Emin = -20 ,
+                        Emax = 20 ,
+ /
+

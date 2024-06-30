@@ -1,0 +1,54 @@
+
+     Program DOS v.6.7MaX starts on 15Nov2021 at 14:10:11 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on    10 processors
+
+     MPI processes distributed on     1 nodes
+     R & G space division:  proc/nbgrp/npool/nimage =      10
+
+     Reading xml data from directory:
+
+     ./MoS2.save/
+     Message from routine qexsd_readschema :
+     input info not found or not readable in xml file
+     file Mo.pbe-spn-kjpaw_psl.0.2.UPF: wavefunction(s)  4D renormalized
+     file S.pbe-n-kjpaw_psl.0.1.UPF: wavefunction(s)  3P renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     Parallelization info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Min         126      49     15                12692     3201     543
+     Max         127      50     16                12705     3220     558
+     Sum        1261     499    151               126991    32155    5459
+ 
+
+     Check: negative core charge=   -0.000001
+
+     negative rho (up, down):  7.717E-08 0.000E+00
+
+     Gaussian broadening (default values): ngauss,degauss=   0    0.000735
+
+ 
+     DOS          :      0.99s CPU      1.08s WALL
+
+ 
+   This run was terminated on:  14:10:12  15Nov2021            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

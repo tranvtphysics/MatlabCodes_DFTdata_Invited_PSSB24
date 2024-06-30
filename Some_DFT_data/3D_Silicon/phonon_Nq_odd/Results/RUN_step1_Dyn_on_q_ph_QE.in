@@ -1,0 +1,19 @@
+
+                       !===============!
+                       !==== PH.X =====!
+                       !===============!
+  
+! Calculate Force constant over q-vectors from 'scf' or 'relax' calculations.
+
+!======================================================================
+!======================================================================
+&inputph
+ outdir=".",
+ prefix="Silicon",
+ tr2_ph = 1d-20,
+ ldisp = .true.,
+ nq1=5, nq2=5, nq3=5,
+ amass(1)=28.086,
+ fildyn='Si.dyn',
+/
+

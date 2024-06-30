@@ -1,0 +1,95 @@
+
+     Program Q2R v.6.7MaX starts on 23Feb2022 at 10:47: 7 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+
+     reading grid info from file 2Dgraphene.dyn0    
+  reading force constants from file 2Dgraphene.dyn1
+  Dielectric Tensor not found
+  nqs=            1
+ q=   0.00000000  0.00000000  0.00000000
+  reading force constants from file 2Dgraphene.dyn2
+  nqs=            6
+ q=   0.00000000  0.16495722  0.00000000
+ q=  -0.14285714  0.08247861  0.00000000
+ q=   0.14285714  0.08247861  0.00000000
+ q=  -0.14285714 -0.08247861  0.00000000
+ q=   0.14285714 -0.08247861  0.00000000
+ q=   0.00000000 -0.16495722  0.00000000
+  reading force constants from file 2Dgraphene.dyn3
+  nqs=            6
+ q=   0.00000000  0.32991444  0.00000000
+ q=  -0.28571429  0.16495722  0.00000000
+ q=   0.28571429  0.16495722  0.00000000
+ q=  -0.28571429 -0.16495722  0.00000000
+ q=   0.28571429 -0.16495722  0.00000000
+ q=   0.00000000 -0.32991444  0.00000000
+  reading force constants from file 2Dgraphene.dyn4
+  nqs=            6
+ q=   0.00000000  0.49487166  0.00000000
+ q=  -0.42857143  0.24743583  0.00000000
+ q=   0.42857143  0.24743583  0.00000000
+ q=  -0.42857143 -0.24743583  0.00000000
+ q=   0.42857143 -0.24743583  0.00000000
+ q=   0.00000000 -0.49487166  0.00000000
+  reading force constants from file 2Dgraphene.dyn5
+  nqs=            6
+ q=   0.14285714  0.24743583  0.00000000
+ q=  -0.14285714  0.24743583  0.00000000
+ q=   0.28571429  0.00000000  0.00000000
+ q=  -0.28571429  0.00000000  0.00000000
+ q=   0.14285714 -0.24743583  0.00000000
+ q=  -0.14285714 -0.24743583  0.00000000
+  reading force constants from file 2Dgraphene.dyn6
+  nqs=           12
+ q=   0.14285714  0.41239305  0.00000000
+ q=   0.28571429  0.32991444  0.00000000
+ q=  -0.28571429  0.32991444  0.00000000
+ q=   0.42857143  0.08247861  0.00000000
+ q=  -0.42857143 -0.08247861  0.00000000
+ q=   0.28571429 -0.32991444  0.00000000
+ q=  -0.28571429 -0.32991444  0.00000000
+ q=   0.42857143 -0.08247861  0.00000000
+ q=  -0.42857143  0.08247861  0.00000000
+ q=  -0.14285714  0.41239305  0.00000000
+ q=  -0.14285714 -0.41239305  0.00000000
+ q=   0.14285714 -0.41239305  0.00000000
+  reading force constants from file 2Dgraphene.dyn7
+  nqs=            6
+ q=   0.14285714  0.57735027  0.00000000
+ q=  -0.42857143  0.41239305  0.00000000
+ q=   0.57142857  0.16495722  0.00000000
+ q=  -0.57142857 -0.16495722  0.00000000
+ q=   0.42857143 -0.41239305  0.00000000
+ q=  -0.14285714  0.57735027  0.00000000
+  reading force constants from file 2Dgraphene.dyn8
+  nqs=            6
+ q=   0.28571429  0.49487166  0.00000000
+ q=  -0.28571429  0.49487166  0.00000000
+ q=   0.57142857  0.00000000  0.00000000
+ q=  -0.57142857  0.00000000  0.00000000
+ q=   0.28571429 -0.49487166  0.00000000
+ q=  -0.28571429 -0.49487166  0.00000000
+
+      q-space grid ok, #points =   49
+
+      fft-check success (sum of imaginary terms < 10^-12)
+ 
+     Q2R          :      0.02s CPU      0.03s WALL
+
+ 
+   This run was terminated on:  10:47: 7  23Feb2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

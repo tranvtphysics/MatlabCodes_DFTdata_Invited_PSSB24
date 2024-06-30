@@ -1,0 +1,20 @@
+
+                       !===============!
+                       !==== PH.X =====!
+                       !===============!
+  
+! Calculate Force constant over q-vectors from 'scf' or 'relax' calculations.
+
+!======================================================================
+!======================================================================
+&inputph
+ outdir=".",
+ prefix="MoS2",
+ tr2_ph = 1d-20,
+ ldisp = .true.,
+ nq1=5, nq2=5, nq3=1,
+ amass(1)=95.94,
+ amass(2)=32.065,
+ fildyn='MoS2.dyn',
+/
+

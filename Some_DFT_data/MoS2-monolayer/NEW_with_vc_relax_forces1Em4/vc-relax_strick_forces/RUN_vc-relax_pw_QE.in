@@ -1,0 +1,82 @@
+
+                       !===============!
+                       !==== PW.X =====!
+                       !===============!
+  
+! relax calculations to find stable structure and ground state.
+
+!======================================================================
+!======================================================================
+&CONTROL
+	calculation = 'vc-relax' , ! Type of calculations: for relaxation: 'relax','vc-relax','md' or 'vc-md'
+	dt=150, ! maximum number of cell dynamic steps
+	restart_mode='from_scratch', ! 'from_scratch': start from beginning, 'restart' : Continue previous interrupted run 
+	pseudo_dir = '../Pseudo', ! folder contains pseudo-potentials
+	prefix = 'MoS2' , ! name of folder contains data of calculation
+	forc_conv_thr = 1.0D-4 ,  ! force convergen threshold (a.u)
+	etot_conv_thr = 1.0D-4, ! Convergence threshold on total energy (a.u)
+	!verbosity = 'low' , ! set 'high' for 'bands' calculation
+	tprnfor = .true. ! default: true for all relax types
+  	tstress = .true. ! default: true for  vc-relax and vc-md
+!======================================================================
+!======================================================================
+! CARD SYSTEMS: lattice vectors, number of atoms, number of type of atoms, energy cut
+
+ /
+ &SYSTEM
+  		ibrav=4,
+  		celldm(1)=5.983, 
+  		celldm(3)=5.000d0,
+		nat = 3, ! number of atoms 
+		ntyp = 2, ! number of different type of atoms
+		ecutwfc = 50.0, ! energy cutof (Ry) in expansion of wave function
+		ecutrho = 500.0, ! energy cutof (Ry) for electron charge density
+		occupations='fixed', ! 'gaussian' smearing for metals, 'fixed' for insulators with a gap           
+		!smearing='mv',
+		!degauss=0.005d0,
+		!input_dft='PBE', ! 'PBE', 'BLYP','vdw-df' etc
+
+!======================================================================
+!======================================================================
+! CARD ELECTRONS:
+
+ /
+ &ELECTRONS
+		diagonalization ='david',
+		mixing_mode = 'local-TF',
+		conv_thr = 1.0d-8,
+		mixing_beta = 0.5, ! if convergence is difficult to obtain, reduce this number to 0.1-0.3
+		electron_maxstep=200, ! usually convergence is achieved less than 100 sc loops
+!======================================================================
+!======================================================================
+! CARD IONS: input this namelist only if calculation == 'relax', 'md', 'vc-relax', or 'vc-md' 
+
+ /
+ &IONS
+      	ion_dynamics = 'bfgs',
+ /
+ &CELL     ! this card is mandatory for vc-relax
+     	cell_dynamics = 'bfgs',
+        press = 0.0,  ! Target pressure [KBar] in a variable-cell md or relaxation run. Defaul: 0.0 in cell relax
+    	press_conv_thr = 0.5,  ! Convergence threshold on the pressure for variable cell. Defaul: 0.5 if vc-relax
+       	!cell_dofree = '2Dxy',
+
+!======================================================================
+!======================================================================
+! CARD ATOMIC SPECIES AND ATOM POSITIONS:
+
+/
+ATOMIC_SPECIES
+Mo  95.94   Mo.pbe-spn-kjpaw_psl.0.2.UPF
+S   32.065  S.pbe-n-kjpaw_psl.0.1.UPF
+ATOMIC_POSITIONS {alat}
+Mo            0.0000000000        0.0000000000        0.0000000000
+S             0.0000000000        0.5819250947        0.4947519049
+S             0.0000000000        0.5819250947       -0.4947519049
+
+!======================================================================
+!======================================================================
+! CARD K-MESH:
+   
+K_POINTS automatic 
+	12 12 1   0 0 0  ! follows by nk1  nk2  nk3  sk1  sk2  sk3

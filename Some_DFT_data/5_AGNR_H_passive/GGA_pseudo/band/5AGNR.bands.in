@@ -1,0 +1,5 @@
+&BANDS
+ outdir='.',
+ prefix='5AGNR',
+ filband='5AGNR.bands',
+/

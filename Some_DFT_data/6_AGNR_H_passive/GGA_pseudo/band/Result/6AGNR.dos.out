@@ -1,0 +1,49 @@
+
+     Program DOS v.6.7MaX starts on 10Mar2022 at 11:19:56 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+
+     Reading xml data from directory:
+
+     ./6AGNR.save/
+     Message from routine qexsd_readschema :
+     input info not found or not readable in xml file
+     file C.pbe-rrkjus.UPF: wavefunction(s)  2S 2P renormalized
+     file H.pbe-rrkjus.UPF: wavefunction(s)  1S renormalized
+
+     IMPORTANT: XC functional enforced from input :
+     Exchange-correlation= PBE
+                           (   1   4   3   4   0   0   0)
+     Any further DFT definition will be discarded
+     Please, verify this is what you really want
+
+ 
+     G-vector sticks info
+     --------------------
+     sticks:   dense  smooth     PW     G-vecs:    dense   smooth      PW
+     Sum        5565    5565   1999               549225   549225  119167
+ 
+
+     negative rho (up, down):  5.492E-04 0.000E+00
+
+     Gaussian broadening (default values): ngauss,degauss=   0    0.000735
+
+ 
+     DOS          :      2.33s CPU      2.87s WALL
+
+ 
+   This run was terminated on:  11:19:59  10Mar2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

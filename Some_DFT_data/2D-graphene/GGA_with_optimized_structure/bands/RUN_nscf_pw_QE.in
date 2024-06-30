@@ -1,0 +1,78 @@
+
+                       !===============!
+                       !==== PW.X =====!
+                       !===============!
+  
+! nscf calculations using ground state from 'scf' or 'relax' calculations.
+
+!======================================================================
+!======================================================================
+&CONTROL
+	calculation = 'nscf' , ! Type of calculations
+	restart_mode='from_scratch', ! 'from_scratch': start from beginning, 'restart' : Continue previous interrupted run
+	pseudo_dir = '../Pseudo' , ! folder contains pseudo-potentials
+	wfcdir = '.' , ! folder contain wave functions
+	prefix = '2Dgraphene' , ! name of folder contains data of calculation
+	forc_conv_thr = 1.0D-4 ,  ! force convergen threshold (a.u)
+	etot_conv_thr = 1.0D-4, ! Convergence threshold on total energy (a.u)
+	verbosity = 'high' , ! set 'high' for 'bands' calculation
+  	disk_io = 'low' , ! do not save data on disk
+!======================================================================
+!======================================================================
+! CARD SYSTEMS: lattice vectors, number of atoms, number of type of atoms, energy cut
+
+ /
+ &SYSTEM
+  		ibrav = 4,
+  		a = 2.4623, 
+  		c = 20.000d0,
+		nat = 2, ! number of atoms 
+		ntyp = 1, ! number of different type of atoms
+		ecutwfc = 90.0, ! energy cutof (Ry) in expansion of wave function
+		ecutrho = 270.0, ! energy cutof (Ry) for electron charge density
+		occupations='smearing', ! 'gaussian' smearing for metals, 'fixed' for insulators with a gap           
+		smearing='methfessel-paxton',
+		degauss=0.02d0,
+		!input_dft='PBE', ! 'PBE', 'BLYP','vdw-df' etc
+      nbnd = 20,
+!======================================================================
+!======================================================================
+! CARD ELECTRONS:
+
+ /
+ &ELECTRONS
+		diagonalization ='david',
+		mixing_mode = 'local-TF',
+		conv_thr = 1.0d-10,
+		mixing_beta = 0.5, ! if convergence is difficult to obtain, reduce this number to 0.1-0.3
+		electron_maxstep=200, ! usually convergence is achieved less than 100 sc loops
+!======================================================================
+!======================================================================
+! CARD IONS: input this namelist only if calculation == 'relax', 'md', 'vc-relax', or 'vc-md' 
+
+ /
+&IONS
+   !(default)  use BFGS quasi-newton algorithm
+
+!======================================================================
+!======================================================================
+! CARD ATOMIC SPECIES AND ATOM POSITIONS:
+
+/
+ATOMIC_SPECIES
+C 12.0107 C.pbe-rrkjus.UPF
+ATOMIC_POSITIONS (crystal)
+C  0.333333333  0.666666666  0.500000000
+C  0.666666666  0.333333333  0.500000000
+
+!======================================================================
+!======================================================================
+! CARD K-MESH:
+   
+K_POINTS (crystal_b)
+4
+0.00000000      0.00000000      0.00000000   40  ! G
+0.66666667     -0.33333333      0.00000000   20  ! K
+0.50000000      0.00000000      0.00000000   40  !M
+0.00000000      0.00000000      0.00000000   20  !G
+

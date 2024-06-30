@@ -1,0 +1,96 @@
+
+                       !===============!
+                       !==== PW.X =====!
+                       !===============!
+  
+! relax calculations to find stable structure and ground state.
+
+!======================================================================
+!======================================================================
+&CONTROL
+	calculation = 'vc-relax' , ! Type of calculations: for relaxation: 'relax','vc-relax','md' or 'vc-md'
+	dt=150, ! maximum number of cell dynamic steps
+	restart_mode='from_scratch', ! 'from_scratch': start from beginning, 'restart' : Continue previous interrupted run 
+	pseudo_dir = '../Pseudo', ! folder contains pseudo-potentials
+	prefix = '6AGNR' , ! name of folder contains data of calculation
+	forc_conv_thr = 1.0D-3 ,  ! force convergen threshold (a.u)
+	etot_conv_thr = 1.0D-4, ! Convergence threshold on total energy (a.u)
+	!verbosity = 'low' , ! set 'high' for 'bands' calculation
+	tprnfor = .true. ! default: true for all relax types
+  	tstress = .true. ! default: true for  vc-relax and vc-md
+!======================================================================
+!======================================================================
+! CARD SYSTEMS: lattice vectors, number of atoms, number of type of atoms, energy cut
+
+ /
+ &SYSTEM
+  		ibrav=8,
+  		a=4.26258, 
+  		b=18.252504,
+  		c=15.0,
+		nat = 16, ! number of atoms 
+		ntyp = 2, ! number of different type of atoms
+		ecutwfc = 90.0, ! energy cutof (Ry) in expansion of wave function
+		ecutrho = 270.0, ! energy cutof (Ry) for electron charge density
+		occupations='fixed', ! 'gaussian' smearing for metals, 'fixed' for insulators with a gap           
+		!smearing='mv',
+		!degauss=0.005d0,
+		!input_dft='PBE', ! 'PBE', 'BLYP','vdw-df' etc
+         !     nbnd = 40,
+!======================================================================
+!======================================================================
+! CARD ELECTRONS:
+
+ /
+ &ELECTRONS
+		diagonalization ='david',
+		mixing_mode = 'local-TF',
+		conv_thr = 1.0d-8,
+		mixing_beta = 0.3, ! if convergence is difficult to obtain, reduce this number to 0.1-0.3
+		electron_maxstep=200, ! usually convergence is achieved less than 100 sc loops
+!======================================================================
+!======================================================================
+! CARD IONS: input this namelist only if calculation == 'relax', 'md', 'vc-relax', or 'vc-md' 
+
+ /
+ &IONS
+      	ion_dynamics = 'bfgs',
+ /
+ &CELL     ! this card is mandatory for vc-relax
+     	cell_dynamics = 'bfgs',
+        press = 0.0,  ! Target pressure [KBar] in a variable-cell md or relaxation run. Defaul: 0.0 in cell relax
+    	press_conv_thr = 0.5,  ! Convergence threshold on the pressure for variable cell. Defaul: 0.5 if vc-relax
+       	!cell_dofree = '2Dxy',
+
+!======================================================================
+!======================================================================
+! CARD ATOMIC SPECIES AND ATOM POSITIONS:
+
+/
+ATOMIC_SPECIES
+    C   12.01070  C.pbe-rrkjus.UPF
+    H   1.007940  H.pbe-rrkjus.UPF
+ATOMIC_POSITIONS {crystal}
+   C   0.6666666667d0   0.3095495234d0   0.5000000000d0	1 1 0
+   C   0.8333333333d0   0.3857297140d0   0.5000000000d0	1 1 0
+   C   0.3333333333d0   0.3095495234d0   0.5000000000d0	1 1 0
+   C   0.6666666667d0   0.4619099047d0   0.5000000000d0	1 1 0
+   C   0.8333333333d0   0.5380900953d0   0.5000000000d0	1 1 0
+   C   0.1666666667d0   0.3857297140d0   0.5000000000d0	1 1 0
+   C   0.3333333333d0   0.4619099047d0   0.5000000000d0	1 1 0
+   C   0.6666666667d0   0.6142702860d0   0.5000000000d0	1 1 0
+   C   0.8333333333d0   0.6904504766d0   0.5000000000d0	1 1 0
+   C   0.1666666667d0   0.5380900953d0   0.5000000000d0	1 1 0
+   C   0.3333333333d0   0.6142702860d0   0.5000000000d0	1 1 0
+   C   0.1666666667d0   0.6904504766d0   0.5000000000d0	1 1 0
+   H   0.7945234954d0   0.2511085779d0   0.5000000000d0	1 1 0
+   H   0.2054765046d0   0.2511085779d0   0.5000000000d0	1 1 0
+   H   0.7054765046d0   0.7488914221d0   0.5000000000d0	1 1 0
+   H   0.2945234954d0   0.7488914221d0   0.5000000000d0	1 1 0 
+
+!======================================================================
+!======================================================================
+! CARD K-MESH:
+   
+K_POINTS automatic 
+	40 1 1   0 0 0  ! follows by nk1  nk2  nk3  sk1  sk2  sk3

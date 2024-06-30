@@ -1,0 +1,125 @@
+
+     Program MATDYN v.6.7MaX starts on 10Feb2022 at 16:40:37 
+
+     This program is part of the open-source Quantum ESPRESSO suite
+     for quantum simulation of materials; please cite
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 21 395502 (2009);
+         "P. Giannozzi et al., J. Phys.:Condens. Matter 29 465901 (2017);
+          URL http://www.quantum-espresso.org", 
+     in publications or presentations arising from this work. More details at
+     http://www.quantum-espresso.org/quote
+
+     Parallel version (MPI), running on     1 processors
+
+     MPI processes distributed on     1 nodes
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.4775%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.4779%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.4790%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.4808%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.4834%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.4867%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.4907%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.4954%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.5008%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.5069%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.5138%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.5212%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.5294%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.5381%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.5475%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.5574%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.5678%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.5787%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.5900%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.6015%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.6134%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.6254%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.6374%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.6495%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.6614%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.6731%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.6844%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.6954%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7058%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7156%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7247%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7332%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7408%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7477%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7538%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7591%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7636%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7674%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7705%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7730%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7750%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7765%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7776%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7784%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7789%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7792%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7794%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7795%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7795%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7795%
+     Max |d(i,j)-d*(j,i)| =  0.000513
+     Max |d(i,j)-d*(j,i)|/|d(i,j)|:   0.7795%
+ 
+     MATDYN       :      0.25s CPU      0.45s WALL
+
+ 
+   This run was terminated on:  16:40:37  10Feb2022            
+
+=------------------------------------------------------------------------------=
+   JOB DONE.
+=------------------------------------------------------------------------------=

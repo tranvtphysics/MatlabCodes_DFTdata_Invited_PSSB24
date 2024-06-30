@@ -1,0 +1,88 @@
+
+                       !===============!
+                       !==== PW.X =====!
+                       !===============!
+  
+	 ! scf calculations to find ground state.
+
+!======================================================================
+!======================================================================
+&CONTROL
+	calculation = 'scf' , ! find ground state, not relax structure
+	restart_mode='from_scratch', ! 'from_scratch': start from beginning, 'restart' : Continue previous interrupted run
+	pseudo_dir = '../Pseudo' , ! folder contains pseudo-potentials
+	prefix = '6AGNR' , ! name of folder contains data of calculation
+	forc_conv_thr = 1.0D-4 ,  ! force convergen threshold (a.u)
+	etot_conv_thr = 1.0D-4, ! Convergence threshold on total energy (a.u)
+	verbosity = 'low' , ! set 'high' for 'bands' calculation
+  	tprnfor = .true.
+  	tstress = .true.
+!======================================================================
+!======================================================================
+! CARD SYSTEMS: lattice vectors, number of atoms, number of type of atoms, energy cut
+
+ /
+ &SYSTEM
+  		ibrav=8,
+  		a=4.304891362, 
+  		b=16.822456765,
+  		c=15.000876201,
+		nat = 16, ! number of atoms 
+		ntyp = 2, ! number of different type of atoms
+		ecutwfc = 90.0, ! energy cutof (Ry) in expansion of wave function
+		ecutrho = 270.0, ! energy cutof (Ry) for electron charge density
+		occupations='fixed', ! 'gaussian' smearing for metals, 'fixed' for insulators with a gap           
+		!smearing='mv',
+		!degauss=0.005d0,
+		!input_dft='PBE', ! 'PBE', 'BLYP','vdw-df' etc
+!======================================================================
+!======================================================================
+! CARD ELECTRONS:
+
+ /
+ &ELECTRONS
+		diagonalization ='david',
+		mixing_mode = 'local-TF',
+		conv_thr = 1.0d-8,
+		mixing_beta = 0.5, ! if convergence is difficult to obtain, reduce this number to 0.1-0.3
+		electron_maxstep=200, ! usually convergence is achieved less than 100 sc loops
+!======================================================================
+!======================================================================
+! CARD IONS: input this namelist only if calculation == 'relax', 'md', 'vc-relax', or 'vc-md' 
+
+ /
+&IONS
+   !(default)  use BFGS quasi-newton algorithm
+
+!======================================================================
+!======================================================================
+! CARD ATOMIC SPECIES AND ATOM POSITIONS:
+
+/
+ATOMIC_SPECIES
+    C   12.01070  C.pbe-rrkjus.UPF
+    H   1.007940  H.pbe-rrkjus.UPF
+ATOMIC_POSITIONS {crystal}
+C             0.6595826274        0.3191159631        0.5000000000
+C             0.8316583419        0.3902697823        0.5000000000
+C             0.3404173726        0.3191159631        0.5000000000
+C             0.6663068433        0.4631442357        0.5000000000
+C             0.8336931567        0.5368557643        0.5000000000
+C             0.1683416581        0.3902697823        0.5000000000
+C             0.3336931567        0.4631442357        0.5000000000
+C             0.6683416581        0.6097302177        0.5000000000
+C             0.8404173726        0.6808840369        0.5000000000
+C             0.1663068433        0.5368557643        0.5000000000
+C             0.3316583419        0.6097302177        0.5000000000
+C             0.1595826274        0.6808840369        0.5000000000
+H             0.7787231694        0.2621683778        0.5000000000
+H             0.2212768306        0.2621683778        0.5000000000
+H             0.7212768306        0.7378316222        0.5000000000
+H             0.2787231694        0.7378316222        0.5000000000
+
+!======================================================================
+!======================================================================
+! CARD K-MESH:
+   
+K_POINTS automatic 
+	40 1 1   0 0 0  ! follows by nk1  nk2  nk3  sk1  sk2  sk3
