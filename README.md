@@ -1,9 +1,6 @@
 # DFT data and Matlab codes for the invited paper pssb 2024
 
 ## DFT data
-
-
-## Matlab codes
 ### 1D structures:
 	- Linear_chain_2atoms_B_N
 	- 5_AGNR_H_passive
@@ -14,3 +11,5 @@
 
 ### 3D structures:
 	- 3D_Silicon
+
+## Matlab codes
