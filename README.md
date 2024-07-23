@@ -1,14 +1,4 @@
-# MatlabCodes_DFTdata_Invited_PSSA24
-assfsadsfs
-
-asf 
+# DFT data and Matlab codes for the invited paper pssb 2024
 
 
-asfafwwsdsf
 
-asfs
-
-safsaf
-
-
-asfssfddffd
