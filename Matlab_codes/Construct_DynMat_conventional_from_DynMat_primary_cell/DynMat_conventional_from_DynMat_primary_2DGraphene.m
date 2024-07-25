@@ -13,7 +13,7 @@ au_of_length_to_Angstrom=0.529177249;
 % THE INFORMATION OF THE PRIMARY-CELLS LATTICE
 
 % Force constants of atoms in the primary cells
-cd('/media/tranvt/Importance/DATA/BACKUP/Onedrive/RESEARCH/C2N_2021/SIMULATIONS/DFT_QE/2D-graphene/GGA_with_optimized_structure/phonon_Nq_odd/Results')
+cd('/media/tranvt/Importance/DATA/RESEARCH/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Paper_PSSA2024_Matlab_codes_and_DFT_data/Some_DFT_data/2D-graphene/GGA_with_optimized_structure/phonon_Nq_odd/Results/')
 load D_0_beta_ALL
 
  D_0_neighbors=D_0_beta_ALL;
