@@ -22,12 +22,11 @@
 clear all
 
 % Add the path of the tool:
-addpath(genpath('/media/tranvt/Importance/DATA/RESEARCH/Works in time/2012-2015.In France.PhD/Dropbox/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Matlab_codes_and_DFT_data/Matlab_codes/Read_DynMat_QE'));
-addpath(genpath('/media/tranvt/Importance/DATA/RESEARCH/Works in time/2012-2015.In France.PhD/Dropbox/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Matlab_codes_and_DFT_data/Matlab_codes/Fourier_transfer_for_dynamical_matrix/'));
+addpath(genpath('I:\DATA\RESEARCH\My papers\Drafts\2024.Paper2_DFT_phonon_transport\Paper_PSSA2024_Matlab_codes_and_DFT_data\Matlab_codes\Read_DynMat_QE'));
+addpath(genpath('I:\DATA\RESEARCH\My papers\Drafts\2024.Paper2_DFT_phonon_transport\Paper_PSSA2024_Matlab_codes_and_DFT_data\Matlab_codes\Fourier_transform_for_dynamical_matrix'));
 
 %%
 
-%cd('/media/tranvt/Importance/DATA/BACKUP/Onedrive/RESEARCH/IMPMC_Paris6_Postdoc_2019_2021/SIMULATIONS/Others/grupy-master/Example_Truong_practice/1.00')
 cd('/media/tranvt/Importance/DATA/RESEARCH/Works in time/2012-2015.In France.PhD/Dropbox/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Matlab_codes_and_DFT_data/Some_DFT_data/Linear_chain_2atoms_B_N/phonon/Result/')
 
 nat=2;%2;
