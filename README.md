@@ -38,3 +38,5 @@
 	- Fourier_Transform_read_DynMat_from_individual_files_QE_Silicon.m
 ### 4. Construct_DynMat_conventional_from_DynMat_primary_cell
 	Codes to construct dynamical matrices of conventional cells directly from that of the primary cells
+	- DynMat_conventional_from_DynMat_primary_2DGraphene.m
+	- DynMat_conventional_from_DynMat_primary_2DMoS2.m
