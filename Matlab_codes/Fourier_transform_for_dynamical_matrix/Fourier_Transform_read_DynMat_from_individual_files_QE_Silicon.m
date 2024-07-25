@@ -22,15 +22,15 @@
 clear all
 
 % Add the path of the tool:
-addpath(genpath('/media/tranvt/Importance/DATA/BACKUP/Onedrive/RESEARCH/DFT_practice/QuantumEspresso/Matlab_Code_Interface_QE/Read_DynMat_QE'));
-addpath(genpath('/media/tranvt/Importance/DATA/BACKUP/Onedrive/RESEARCH/DFT_practice/QuantumEspresso/Matlab_Code_Interface_QE/Fourier_transfer_for_dynamical_matrix'));
+addpath(genpath('/media/tranvt/Importance/DATA/RESEARCH/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Paper_PSSA2024_Matlab_codes_and_DFT_data/Matlab_codes/Read_DynMat_QE'));
+addpath(genpath('/media/tranvt/Importance/DATA/RESEARCH/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Paper_PSSA2024_Matlab_codes_and_DFT_data/Matlab_codes/Fourier_transform_for_dynamical_matrix'));
 
 %%
 
-cd('/media/tranvt/Importance/DATA/BACKUP/Onedrive/RESEARCH/C2N_2021/SIMULATIONS/DFT_QE/3D_Silicon/phonon_Nq_odd/Results') 
+cd('/media/tranvt/Importance/DATA/RESEARCH/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Paper_PSSA2024_Matlab_codes_and_DFT_data/Some_DFT_data/3D_Silicon/phonon_Nq_odd/Results/') 
 
 
-nat=2;%2;
+nat=2;% number of atoms per cell
 amass=[28.0855,28.0855];%[207.2,127.60]; % amass(Pb)=207.2;amss(Te)=127.60; % Mass for MoS2: [95.94,32.065,32.065 ]
 
 number_of_individual_files=10; % number of file .dyn1, .dyn2, ...

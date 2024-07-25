@@ -22,14 +22,14 @@
 clear all
 
 % Add the path of the tool:
-addpath(genpath('I:\DATA\RESEARCH\My papers\Drafts\2024.Paper2_DFT_phonon_transport\Paper_PSSA2024_Matlab_codes_and_DFT_data\Matlab_codes\Read_DynMat_QE'));
-addpath(genpath('I:\DATA\RESEARCH\My papers\Drafts\2024.Paper2_DFT_phonon_transport\Paper_PSSA2024_Matlab_codes_and_DFT_data\Matlab_codes\Fourier_transform_for_dynamical_matrix'));
+addpath(genpath('/media/tranvt/Importance/DATA/RESEARCH/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Paper_PSSA2024_Matlab_codes_and_DFT_data/Matlab_codes/Read_DynMat_QE'));
+addpath(genpath('/media/tranvt/Importance/DATA/RESEARCH/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Paper_PSSA2024_Matlab_codes_and_DFT_data/Matlab_codes/Fourier_transform_for_dynamical_matrix'));
 
 %%
 
-cd('/media/tranvt/Importance/DATA/RESEARCH/Works in time/2012-2015.In France.PhD/Dropbox/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Matlab_codes_and_DFT_data/Some_DFT_data/Linear_chain_2atoms_B_N/phonon/Result/')
+cd('/media/tranvt/Importance/DATA/RESEARCH/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Paper_PSSA2024_Matlab_codes_and_DFT_data/Some_DFT_data/Linear_chain_2atoms_B_N/phonon/Result/')
 
-nat=2;%2;
+nat=2;% number of atoms per cell
 amass=[10.811,14.0067];%[207.2,127.60]; % amass(Pb)=207.2;amss(Te)=127.60; % Mass for MoS2: [95.94,32.065,32.065 ]
 
 
