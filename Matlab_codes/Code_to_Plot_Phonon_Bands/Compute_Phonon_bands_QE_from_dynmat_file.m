@@ -1,14 +1,14 @@
 clear all
 
 %% Add the path of the tool:
-addpath(genpath('I:\DATA\RESEARCH\My papers\Drafts\2024.Paper2_DFT_phonon_transport\Paper_PSSA2024_Matlab_codes_and_DFT_data\Matlab_codes\Read_DynMat_QE'));
+addpath(genpath('/media/tranvt/Importance/DATA/RESEARCH/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Paper_PSSA2024_Matlab_codes_and_DFT_data/Matlab_codes/Read_DynMat_QE'));
 
 %%
 
-cd('I:\DATA\RESEARCH\My papers\Drafts\2024.Paper2_DFT_phonon_transport\Paper_PSSA2024_Matlab_codes_and_DFT_data\Some_DFT_data\MoS2-monolayer\NEW_with_vc_relax_forces1Em4\phonon\Result')
+cd('/media/tranvt/Importance/DATA/RESEARCH/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Paper_PSSA2024_Matlab_codes_and_DFT_data/MoS2-monolayer/NEW_with_vc_relax_forces1Em4/phonon/Result')
 
-nat=3;
-amass=[95.94,32.065,32.065];%[207.2,127.60]; % amass(Pb)=207.2;amss(Te)=127.60; % Mass for MoS2: [95.94,32.065,32.065 ]
+nat=3; % number of atoms per cell
+amass=[95.94,32.065,32.065];% atomistic masses [207.2,127.60]; % amass(Pb)=207.2;amss(Te)=127.60; % Mass for MoS2: [95.94,32.065,32.065 ]
 
 prefix='MoS2.dynmat';%'PbTe.dynmat';
 % read dynamic matrix file: prefix.dynmat

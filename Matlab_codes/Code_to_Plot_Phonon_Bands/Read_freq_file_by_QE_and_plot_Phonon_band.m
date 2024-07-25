@@ -5,7 +5,7 @@
 clear all
 
 %% directory stores the phonon data files
-dir='/media/tranvt/Importance/DATA/RESEARCH/Works in time/2012-2015.In France.PhD/Dropbox/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Matlab_codes_and_DFT_data/Some_DFT_data/2D-graphene/GGA_with_optimized_structure/phonon_Nq_odd/Results';
+dir='/media/tranvt/Importance/DATA/RESEARCH/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Paper_PSSA2024_Matlab_codes_and_DFT_data/Some_DFT_data/2D-graphene/GGA_with_optimized_structure/phonon/Results/';
 
 % NOTE: After Calculating phononbands with matdyn.x, there are two files are generated: prefix.freq and prefix.freq.gp
 % prefix.freq: contains information of number of bands, number of qpoints,q-vectors and frequencies
