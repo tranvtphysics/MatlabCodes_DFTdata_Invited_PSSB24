@@ -8,12 +8,6 @@ function [D_0_beta_ALL,R_0_beta_ALL,Position_cells]=Construct_DynMat_by_reading_
 % amass: atomic mass of each kind of atoms. Format: real
 
 %%
-% Dir='/media/tranvt/Importance/DATA/BACKUP/Onedrive/RESEARCH/C2N_2021/SIMULATIONS/DFT_QE/2D-graphene/GGA_new/RESULTS/phonon';
-% cd(Dir);
-% 
-% filename_fc='gr.fc';
-% nat=2;
-% amass=[12,12];%[10.811,14.0067];
 
 mass=amass*1.660540199E-27;% convert masses to kg
 

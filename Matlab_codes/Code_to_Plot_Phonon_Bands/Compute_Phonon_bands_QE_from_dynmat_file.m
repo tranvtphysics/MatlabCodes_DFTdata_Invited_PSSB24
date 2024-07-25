@@ -1,12 +1,11 @@
 clear all
 
 %% Add the path of the tool:
-addpath(genpath('/media/tranvt/Importance/DATA/RESEARCH/Works in time/2012-2015.In France.PhD/Dropbox/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Matlab_codes_and_DFT_data/Matlab_codes/Read_DynMat_QE'));
+addpath(genpath('I:\DATA\RESEARCH\My papers\Drafts\2024.Paper2_DFT_phonon_transport\Paper_PSSA2024_Matlab_codes_and_DFT_data\Matlab_codes\Read_DynMat_QE'));
 
 %%
 
-%cd('/media/tranvt/Importance/DATA/BACKUP/Onedrive/RESEARCH/IMPMC_Paris6_Postdoc_2019_2021/SIMULATIONS/Others/grupy-master/Example_Truong_practice/1.00')
-cd('/media/tranvt/Importance/DATA/RESEARCH/Works in time/2012-2015.In France.PhD/Dropbox/My papers/Drafts/2024.Paper2_DFT_phonon_transport/Matlab_codes_and_DFT_data/Some_DFT_data/MoS2-monolayer/NEW_with_vc_relax_forces1Em4/phonon/Result')
+cd('I:\DATA\RESEARCH\My papers\Drafts\2024.Paper2_DFT_phonon_transport\Paper_PSSA2024_Matlab_codes_and_DFT_data\Some_DFT_data\MoS2-monolayer\NEW_with_vc_relax_forces1Em4\phonon\Result')
 
 nat=3;
 amass=[95.94,32.065,32.065];%[207.2,127.60]; % amass(Pb)=207.2;amss(Te)=127.60; % Mass for MoS2: [95.94,32.065,32.065 ]
