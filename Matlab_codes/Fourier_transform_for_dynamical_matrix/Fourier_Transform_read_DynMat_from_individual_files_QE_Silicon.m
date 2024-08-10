@@ -152,6 +152,7 @@ end
 %% Applying Acoustic Sum rule:
   [D_0_beta_ALL]=Acoustic_Sum_check_diaginal_blocks_of_DynMat_real_space(D_0_beta_ALL,amass,N1_shells,N2_shells,N3_shells);
 
+save D_0_beta_ALL D_0_beta_ALL
 %% TEST
 % D_0_0
 % 
