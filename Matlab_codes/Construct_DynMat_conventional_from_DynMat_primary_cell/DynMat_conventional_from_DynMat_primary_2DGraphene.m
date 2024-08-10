@@ -37,8 +37,7 @@ a3=alat_primary*[0.000000   0.000000   8.122487];
 A=[a1' a2' a3'];% matrix 3x3 containing a1, a2, a3
 
 % Coordinates, order ,of atoms in the primary-cell lattice.  [m1,m2,m3]
-% indeces indicatting the cell of the atoms are added as the last three
-% indeces
+% indeces indicatting the cell of the atoms are added as the last three indeces
 X0=[+0.000000000   +1.421609566  +10.000000000 1   0 0 0% this atom in cell [m1,m2,m3]=[0,0,0]
     +1.231149999   +0.710804783  +10.000000000 2   0 0 0]; % this atom in cell [m1,m2,m3]=[0,0,0]
 
@@ -93,7 +92,7 @@ K33_all=zeros(3,3,2*N1_shells+1,2*N2_shells+1,2*N3_shells+1,nat,nat); % K(m1,m2,
 
 for na=1:nat % na-th atom in cell 0
     
-    D33_n1n1=zeros(3,3); % WHY write D33_n1n1 here?
+    %D33_n1n1=zeros(3,3); 
     
     for nb=1:nat % na-th atom in cell (m1,m2,m3)
     mass_na=mass(na);mass_nb=mass(nb);   
@@ -135,7 +134,7 @@ for m1_c=-N1_shells_c:N1_shells_c
         for m3_c=-N3_shells_c:N3_shells_c
             n3_c=m3_c+(N3_shells_c+1); % for matrix index, it must be possitive
 
-            % Explain why I used both n and m index: n used to index matrix, it must be possitive. 
+            % Explain why I used both n and m index: n used to index matrix, it must be positive. 
             % m used as m in the equation to determine vector translation, it can be negative. 
             % So, with each m, we have a corresponding n: for example, n1=1?m1=-N1_shell; n1= N1_shell+1?m1=0
            %============================================================================================        
